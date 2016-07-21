@@ -8,22 +8,24 @@ Git Hooks
 
 ※clone する場所をHomeにしておきます。
   
-`cd ~`
-
-`git clone https://github.com/kenzo0107/git-hooks`
-  
+```
+$ cd ~
+$ git clone https://github.com/kenzo0107/git-hooks
+```  
   
   
 #### 実行権限付与
 
-`chmod 0777 ~/git-hooks/.git_template/pre-commit`
-
+```
+$ chmod 0777 ~/git-hooks/.git_template/hooks/pre-commit
+```
   
   
 #### フック設定
 
-`git config --global init.templatedir ~/git-hooks/.git_template/`
-  
+```
+git config --global init.templatedir ~/git-hooks/.git_template/
+```
   
 #### 設定確認
 
