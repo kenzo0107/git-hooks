@@ -24,13 +24,13 @@ $ chmod 0777 ~/git-hooks/.git_template/hooks/pre-commit
 #### フック設定
 
 ```
-git config --global init.templatedir ~/git-hooks/.git_template/
+$ git config --global init.templatedir ~/git-hooks/.git_template/
 ```
   
 #### 設定確認
 
 ```
-git config --list
+$ git config --list
 
 ...
 init.templatedir=/Users/kenzo/git-hooks/.git_template/
@@ -45,8 +45,8 @@ init.templatedir=/Users/kenzo/git-hooks/.git_template/
 その為、既にclone済みの場合は、そのプロジェクトの最高階層で`git init`すること。
 
 ```
-cd `git rev-parse --show-toplevel`
-git init
+$ cd `git rev-parse --show-toplevel`
+$ git init
 ```
   
 
@@ -56,7 +56,7 @@ git init
 * t.phpファイル作成
 
 ```
-vi t.php
+$ vi t.php
 ```
 
 ```
@@ -68,15 +68,16 @@ a = 1
 
 * indexへ追加
 
-`git add t.php`
+```
+$ git add t.php
+```
   
 
 * git commit
 
 
-
 ```
-git commit -m "create t.php"
+$ git commit -m "create t.php"
 
 
 PHP Parse error:  syntax error, unexpected '=' in t.php on line 2
